@@ -1,23 +1,72 @@
 aid: lyricfind
+
 name: LyricFind
-description: 'LyricFind is a company surfaced via the API Evangelist harvest backlog (source: music) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/5f972a7c930e1b7910954135/t/67880a60a697a603507d0fa1/1736968801003/SocialShareImage_Generic.jpg?format=1500w
+
+description: 'LyricFind provides licensed lyrics and music‑related data services to businesses worldwide. Through its robust API platform, developers can integrate lyric search, display, translation, and licensing capabilities into applications across industries such as streaming, automotive, health & fitness, and retail. The company offers comprehensive data licensing, compliance tools, and analytics to ensure lawful use of copyrighted lyrics, supporting partners from major record labels to independent artists.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lyricfind/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:music
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-21'
+
 modified: '2026-09-21'
+
 tags:
 - Company
-apis: []
+- Music
+- Lyrics
+- Data Licensing
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Newsroom
+  url: https://www.lyricfind.com/press
+- type: Login
+  url: https://dashboard.lyricfind.com/login
+- type: DomainSecurity
+  url: security/lyricfind-domain-security.yml
 - type: Website
   url: https://lyricfind.com/
+- type: Blog
+  url: https://blog.lyricfind.com/
+- type: Documentation
+  url: https://www.lyricfind.com/
+- type: TermsOfService
+  url: https://www.lyricfind.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.lyricfind.com/privacy-policy
+- type: Support
+  url: https://www.lyricfind.com/contact
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation at https://docs.lyricfind.com/ returns 404 for common OpenAPI spec URLs.
+  evidence:
+    - url: https://docs.lyricfind.com/openapi.json
+      status: 404
+  checked: 2026-09-21
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
