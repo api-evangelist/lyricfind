@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-21'
 
-modified: '2026-09-21'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -40,6 +40,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://blog.lyricfind.com/lyricfind-out-loud/all
+  type: Blog
+- url: https://blog.lyricfind.com/lyricfind-out-loud/rss.xml
+  type: BlogRSS
 - type: Newsroom
   url: https://www.lyricfind.com/press
 - type: Login
